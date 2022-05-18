@@ -30,7 +30,6 @@
 ### How its made: 
 We have built this platform with Reactjs as a frontend, Polygon for smart contracts and other bonty integration for various functionalities. 
 - Payroll management system of The Decentra Tool has been achieved through the use of superfluid. 
-- IPFS  Web3 storage has been used for permanent storage of DAO documents on DAO drive
-- Skill wallet is used to login into the Decentra Tool  to access the dashboard as per permissions granted to the member.
+- Moralis file storage has been used for permanent storage of DAO documents on DAO drive
 - Graph: Subgraph query is used to fetch the outgoing payroll salary stream being distributed to DAO members. 
 
