@@ -77,18 +77,18 @@ export default function SignUp(props) {
     onSubmit: async (values) => {
       try {
         const ABI = JSON.parse(values.abi);
-        console.log(ABI,"abi");
+        console.log(ABI, "abi");
         window.ethereum.enable();
         const accounts = await window.ethereum.request({
           method: "eth_requestAccounts",
         });
-        console.log(accounts,"accounts");
+        console.log(accounts, "accounts");
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
         const dao = new ethers.Contract(values.daoAdd, ABI, signer);
-        console.log(dao,"dao");
+        console.log(dao, "dao");
         const owner = await dao.owner();
-        console.log(owner,"owner");
+        console.log(owner, "owner");
 
         if (Web3.utils.toChecksumAddress(accounts[0]) == owner) {
           // toChecksumAddress function is used to convert address into uppercase.
@@ -102,7 +102,7 @@ export default function SignUp(props) {
           await authenticate();
           localStorage.setItem("DAO", values.daoAdd);
           localStorage.setItem("isOwner", "true");
-          navigate("/dashboard/administration/role");
+          navigate("/dashboard");
         } else {
           toast.error("You are not owner of this DAO");
         }

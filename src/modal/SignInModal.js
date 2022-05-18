@@ -106,7 +106,7 @@ export default function Login(props) {
         localStorage.setItem("isOwner", "false");
         localStorage.setItem("DAO", selectedDao);
         localStorage.setItem("role", values.role);
-        navigate("/dashboard/administration/role");
+        navigate("/dashboard");
       } else {
         toast.error(
           "You are not member of this DAO or may be your role is different!"
