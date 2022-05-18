@@ -6,7 +6,6 @@ import { alpha, styled } from "@mui/material/styles";
 
 import TopImage from "../assets/dao-2.png";
 
-
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import MetamaskImg from "../assets/metamask.png";
@@ -15,13 +14,12 @@ import "./home.css";
 
 import { Link } from "react-router-dom";
 
-import AgreementRoot from './AgreementRoot'
-import CryptoRoot from './CryptoRoot'
-import SubscriptionRoot from './SubscriptionRoot';
-import ProductRoot from './ProductRoot'
-import InvoicingRoot from './InvoicingRoot'
-import AnalyticsRoot from './AnalyticsRoot'
-
+import AgreementRoot from "./AgreementRoot";
+import CryptoRoot from "./CryptoRoot";
+import SubscriptionRoot from "./SubscriptionRoot";
+import ProductRoot from "./ProductRoot";
+import InvoicingRoot from "./InvoicingRoot";
+import AnalyticsRoot from "./AnalyticsRoot";
 
 export default function Lending() {
   const RootStyle = styled(Card)(({ theme }) => ({
@@ -53,18 +51,14 @@ export default function Lending() {
         <div className="img-back">
           <img alt="" src={Background} />
         </div>
-        <header
-
-        >
-        </header>
+        <header></header>
         <div className="container section-margin">
           <div className="row">
-            <div className="col-12">
+            <div className="col-2">
               <Modal
                 aria-labelledby="transition-modal-title"
                 aria-describedby="transition-modal-description"
                 className="launchModel"
-
                 closeAfterTransition
                 BackdropComponent={Backdrop}
                 BackdropProps={{
@@ -94,87 +88,80 @@ export default function Lending() {
                 </div>
               </Modal>
             </div>
-            <div className="col-12 col-lg-12 col-md-12  ">
+            <div className="col-8 col-lg-8 col-md-8  ">
               <h1 className="home-header-text">
-                Complete <span style={{ color: "#6EBF8B" }}>DAO Team</span> Managment Solution
+                Complete <span style={{ color: "#6EBF8B" }}>DAO Team</span>{" "}
+                Managment Solution
               </h1>
               <p className="home-body-text">
-                The Decentra Tool helps DAO manage their role based Team membership using NFTs, Payroll management, DAO Drive for document management and grant role based permissions to DAO members.
+                The Decentra Tool helps DAO manage their role based Team
+                membership using NFTs, Payroll management, DAO Drive for
+                document management and grant role based permissions to DAO
+                members.
               </p>
-              <div className="watch-video-button mr-2" >
+              <div className="watch-video-button mr-2">
                 <button className="enterBtn">Learn More</button>
-
               </div>
             </div>
             {/* <div className="col-12 col-lg-5 col-md-5 home-top-image">
               <img src={TopImage} alt="" height="auto" width="100%" />
             </div> */}
+            <div className="col-2 col-lg-2 col-md-2  "></div>
           </div>
         </div>
 
         <div className="container-fluid bg-color-section-3 section-margin ">
           <div className="row">
             <div className="col-12 col-lg-6 text-center m-auto  ">
-              <h1 className="section-header-text mt-4 " style={{ fontSize: "36px", fontWeight: "bold" }}>
-
-                The <span style={{ color: "#6EBF8B" }}>Decentra Tool </span> Covers
+              <h1
+                className="section-header-text mt-4 "
+                style={{ fontSize: "36px", fontWeight: "bold" }}
+              >
+                The <span style={{ color: "#6EBF8B" }}>Decentra Tool </span>{" "}
+                Covers
               </h1>
-
             </div>
           </div>
-          <div className="container  mt-5 mb-5 "  >
-
+          <div className="container  mt-5 mb-5 ">
             {/* <div className="row">
             </div> */}
             <div className="row">
-
               <div className="col-12 col-lg-4 col-md-4 mt-4">
-
                 <AgreementRoot />
-
               </div>
 
               <div className="col-12 col-lg-4 col-md-4 mt-4">
-
                 <CryptoRoot />
-
               </div>
 
               <div className="col-12 col-lg-4 col-md-4 mt-4">
-
                 <SubscriptionRoot />
-
               </div>
 
               <div className="col-12 col-lg-4 col-md-4 mt-4">
-
                 <ProductRoot />
-
               </div>
 
               <div className="col-12 col-lg-4 col-md-4 mt-4">
-
                 <InvoicingRoot />
-
               </div>
 
               <div className="col-12 col-lg-4 col-md-4 mt-4">
-
                 <AnalyticsRoot />
-
               </div>
-
             </div>
-
           </div>
         </div>
 
-
-
-        <div className="container-fluid  section-margin mb-5" >
+        <div className="container-fluid  section-margin mb-5">
           <div className="row">
             <div className="col-12 col-lg-6 text-center m-auto  ">
-              <h1 className="section-header-text " style={{ marginBottom: "90px" }}>How does it work ?</h1>
+              <h1
+                className="section-header-text "
+                style={{ marginBottom: "90px" }}
+              >
+                How does it work ?
+              </h1>
             </div>
           </div>
           <div className="col-8 m-auto">
@@ -195,16 +182,14 @@ export default function Lending() {
                 <p className="section-token">DAO Drive - Doc management </p>
               </div>
               <div className="col-12 col-lg-4 col-md-4">
-                <p className="section-token">Whistleblower and Feedback report</p>
+                <p className="section-token">
+                  Whistleblower and Feedback report
+                </p>
               </div>
-
             </div>
           </div>
         </div>
-
       </div>
     </Fragment>
   );
 }
-
-
