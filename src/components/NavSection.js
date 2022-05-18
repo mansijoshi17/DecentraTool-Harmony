@@ -204,6 +204,8 @@ export default function NavSection({ navConfig, ...other }) {
     fetch();
   }, [user]);
 
+  console.log(roles, "roles");
+
   return (
     <Box {...other}>
       <List disablePadding>
@@ -211,12 +213,31 @@ export default function NavSection({ navConfig, ...other }) {
           if (
             item.key == "administration" &&
             isOwner == "false" &&
-            roles.name == "Admin"
+            roles.administration == true
+          ) {
+            return <NavItem key={item.title} item={item} active={match} />;
+          } else if (
+            item.key !== "administration" &&
+            isOwner == "false" &&
+            item.key == "dAOPay" && 
+            roles.dAOPay == true
+          ) {
+            return <NavItem key={item.title} item={item} active={match} />;
+          } else if (
+            item.key !== "administration" &&
+            isOwner == "false" &&
+            item.key == "daodrive" &&
+            roles.daodrive == true
+          ) {
+            return <NavItem key={item.title} item={item} active={match} />;
+          } else if (
+            item.key !== "administration" &&
+            isOwner == "false" &&
+            item.key == "daosupport" &&
+            roles.daosupport == true
           ) {
             return <NavItem key={item.title} item={item} active={match} />;
           } else if (isOwner == "true") {
-            return <NavItem key={item.title} item={item} active={match} />;
-          } else if (item.key !== "administration" && isOwner == "false") {
             return <NavItem key={item.title} item={item} active={match} />;
           }
         })}

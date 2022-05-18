@@ -57,6 +57,7 @@ const sidebarConfig = [
   },
   {
     title: "DAO Support",
+    key: "daosupport",
     icon: getIcon("eva:people-fill"),
     children: [
       {
