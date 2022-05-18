@@ -77,7 +77,7 @@ function Subscription() {
   const web3Context = React.useContext(Web3Context);
   const { connectWallet, address } = web3Context;
   const supweb3Context = React.useContext(SuperfluidWeb3Context);
-  const { listOutFlows, totalStreams } = supweb3Context;
+  const { totalStreams } = supweb3Context;
 
   const [status, setStatus] = React.useState("");
   const [open, setOpen] = React.useState(false);
@@ -109,9 +109,9 @@ function Subscription() {
     setData();
   }, [data, isUpdated, user]);
 
-  useEffect(() => {
-    listOutFlows();
-  });
+  // useEffect(() => {
+  //   listOutFlows();
+  // });
 
   async function setData() {
     setLoading(true);

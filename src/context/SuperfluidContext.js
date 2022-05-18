@@ -245,16 +245,16 @@ async function getUSDCXBalance(
   return (
     <SuperfluidWeb3Context.Provider
       value={{
-        getSubAddress,
-        outgoingFlows,
-        getUSDCXBalance,
-        subTotal,
-        subflow,
-        createNewFlow,
-        isLoadingcon,
-        listOutFlows,
-        totalStreams,
-        flow, 
+        // getSubAddress,
+        // outgoingFlows,
+        // getUSDCXBalance,
+        // subTotal,
+        // subflow,
+        // createNewFlow,
+        // isLoadingcon,
+        // listOutFlows,
+        // totalStreams,
+        // flow, 
       }}
       {...props}
     >

@@ -43,11 +43,11 @@ export default function SubscribtionDetails() {
   const web3Context = React.useContext(SuperfluidWeb3Context);
   const { createNewFlow, isLoadingcon } = web3Context;
   const supweb3Context = React.useContext(SuperfluidWeb3Context);
-  const { listOutFlows, totalStreams } = supweb3Context;
+  const { totalStreams } = supweb3Context;
 
-  useEffect(() => {
-    listOutFlows();
-  });
+  // useEffect(() => {
+  //   listOutFlows();
+  // });
 
   const [flowRate, setFlowRate] = useState("");
 

@@ -48,27 +48,27 @@ export default function Payroll() {
   const [balance, setBalance] = useState(0);
   const [netFlow, setNetFlow] = useState(0);
 
-  const provider = new ethers.providers.Web3Provider(window.ethereum);
-  const FETCH_BALANCE_INTERVAL = 25000;
+  // const provider = new ethers.providers.Web3Provider(window.ethereum);
+  // const FETCH_BALANCE_INTERVAL = 25000;
 
   const updateBalance = () => {
-    getUSDCXBalance(provider, user?.attributes?.ethAddress).then((value) => {
-      setBalance(parseFloat(value));
-    });
+    // getUSDCXBalance(provider, user?.attributes?.ethAddress).then((value) => {
+    //   setBalance(parseFloat(value));
+    // });
   };
 
-  const updateNetFlow = async () => {
-    const result = await flowDetails(user?.attributes?.ethAddress);
-    setNetFlow(parseFloat(ethers.utils.formatEther(result.cfa.netFlow)));
-  };
-  useEffect(() => {
-    const id = setInterval(() => {
-      updateBalance();
-    }, FETCH_BALANCE_INTERVAL);
-    updateBalance();
-    updateNetFlow();
-    return () => clearInterval(id);
-  },[provider]); 
+  // const updateNetFlow = async () => {
+  //   const result = await flowDetails(user?.attributes?.ethAddress);
+  //   setNetFlow(parseFloat(ethers.utils.formatEther(result.cfa.netFlow)));
+  // };
+  // useEffect(() => {
+  //   const id = setInterval(() => {
+  //     updateBalance();
+  //   }, FETCH_BALANCE_INTERVAL);
+  //   updateBalance();
+  //   updateNetFlow();
+  //   return () => clearInterval(id);
+  // },[provider]); 
   
 
 

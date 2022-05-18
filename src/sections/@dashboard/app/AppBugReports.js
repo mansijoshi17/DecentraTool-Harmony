@@ -44,7 +44,7 @@ const ANIMATION_MINIMUM_STEP_TIME = 80;
 
 export default function AppBugReports() {
   const supweb3Context = React.useContext(SuperfluidWeb3Context);
-  const { listOutFlows, totalStreams, flow } = supweb3Context;
+  const { totalStreams, flow } = supweb3Context;
   const [weiValue, setWeiValue] = useState(flow?.streamedUntilUpdatedAt);
 
   const balanceTimestampMs = useMemo(
@@ -103,9 +103,9 @@ export default function AppBugReports() {
     }
   }, [flow]);
 
-  useEffect(() => {
-    listOutFlows();
-  });
+  // useEffect(() => {
+  //   listOutFlows();
+  // });
 
   return (
     <RootStyle>
