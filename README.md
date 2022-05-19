@@ -28,6 +28,33 @@
 
 ![feedback](https://user-images.githubusercontent.com/105703992/168972418-2391d4bb-dfc3-4d9b-a6ff-34f815f16a12.png)
 
+### Blockchain: Boba Network
+
+https://github.com/devchain17/Decentra-Tool/blob/master/hardhat.config.js
+
+``require("dotenv").config({ path: "./.env" });
+require("@nomiclabs/hardhat-waffle");
+
+const pk_1 = process.env.REACT_APP_BOBA_PRIVATE_KEY;
+console.log(pk_1);
+module.exports = {
+solidity: "0.8.4",
+networks: {
+hardhat: {},
+boba_rinkeby: {
+url: "https://rinkeby.boba.network",
+accounts: [pk_1],
+},
+},
+};
+``
+
+### Contract List:
+
+**1) Bulk Mint Token Contract:** https://blockexplorer.rinkeby.boba.network/address/0x0C4DCc2dc216fF3Fe1A7A4F6c9B5D71cbA10AFC2/transactions
+
+**1) Multi Send Token Contract:** https://blockexplorer.rinkeby.boba.network/address/0x63C2464BC8b0B22e00Df459310b728414dF6BE4e/transactions
+
 ### How its made:
 
 We have built this platform with Reactjs as a frontend, Polygon for smart contracts and other bonty integration for various functionalities.
