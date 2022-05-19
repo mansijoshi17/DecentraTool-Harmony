@@ -32,7 +32,7 @@
 
 https://github.com/devchain17/Decentra-Tool/blob/master/hardhat.config.js
 
-``require("dotenv").config({ path: "./.env" });
+`require("dotenv").config({ path: "./.env" });
 require("@nomiclabs/hardhat-waffle");
 
 const pk_1 = process.env.REACT_APP_BOBA_PRIVATE_KEY;
@@ -46,8 +46,8 @@ url: "https://rinkeby.boba.network",
 accounts: [pk_1],
 },
 },
-};
-``
+};`
+
 
 ### Contract List:
 
