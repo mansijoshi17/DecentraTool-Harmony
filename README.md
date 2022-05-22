@@ -28,7 +28,7 @@
 
 ![feedback](https://user-images.githubusercontent.com/105703992/168972418-2391d4bb-dfc3-4d9b-a6ff-34f815f16a12.png)
 
-# Contract Addresses : Polygon
+### Contract Addresses : Polygon
 
 BulkMint: 0xd037aF2979AaB4B1bcef601337427C710e1cfF7f
 
