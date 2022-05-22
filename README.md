@@ -30,8 +30,6 @@
 
 ### How its made:
 
-We have built this platform with Reactjs as a frontend, Polygon for smart contracts and other bonty integration for various functionalities.
-
 -  Role based Membership: By this functionality Admin can create NFT(ERC721 Token) and mint membership tokens based on user's role like Admin, Data manager, Support team etc and assign the role to respective member of the DAO.
 - While Adding members, Admin needs to send Role NFT to user's address by which user will be able to login and access role based dashboard as per Admin's assigned permission.
 - Payroll management system of The Decentra Tool has been achieved through the use of superfluid.
