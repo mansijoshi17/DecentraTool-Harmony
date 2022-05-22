@@ -28,9 +28,13 @@
 
 ![feedback](https://user-images.githubusercontent.com/105703992/168972418-2391d4bb-dfc3-4d9b-a6ff-34f815f16a12.png)
 
+### Blockchain: Deployment
+
+https://github.com/devchain17/Decentra-Tool/blob/master/hardhat.config.js
+
 ### How its made:
 
--  Role based Membership: By this functionality Admin can create NFT(ERC721 Token) and mint membership tokens based on user's role like Admin, Data manager, Support team etc and assign the role to respective member of the DAO.
+- Role based Membership: By this functionality Admin can create NFT(ERC721 Token) and mint membership tokens based on user's role like Admin, Data manager, Support team etc and assign the role to respective member of the DAO.
 - While Adding members, Admin needs to send Role NFT to user's address by which user will be able to login and access role based dashboard as per Admin's assigned permission.
 - Payroll management system of The Decentra Tool has been achieved through the use of superfluid.
 - Moralis file storage has been used for permanent storage of DAO documents on DAO drive
