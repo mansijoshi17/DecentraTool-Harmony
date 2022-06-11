@@ -1,4 +1,4 @@
 export const bulkMintTokenContract =
-  "0x0C4DCc2dc216fF3Fe1A7A4F6c9B5D71cbA10AFC2";
+  "0x0005A12fFB8edf3D93E49fEb79E3ea45883B1de2";
   export const multisendTokenContract =
-  "0x63C2464BC8b0B22e00Df459310b728414dF6BE4e";
+  "0x89d050840d9B93AA6E5f73A350921dD1818059f7";
