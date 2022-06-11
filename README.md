@@ -28,15 +28,15 @@
 
 ![feedback](https://user-images.githubusercontent.com/105703992/168972418-2391d4bb-dfc3-4d9b-a6ff-34f815f16a12.png)
 
-### Contract Addresses : Polygon
+### Contract Addresses : 
 
-BulkMint: 0xd037aF2979AaB4B1bcef601337427C710e1cfF7f
+BulkMint: 0x0005A12fFB8edf3D93E49fEb79E3ea45883B1de2
 
-https://mumbai.polygonscan.com/address/0xd037aF2979AaB4B1bcef601337427C710e1cfF7f
+https://explorer.pops.one/address/0x0005a12ffb8edf3d93e49feb79e3ea45883b1de2
 
-MultiSend: 0x5158542F000f3D50aA3Ef90E04beB41C80b8D862
+MultiSend: 0x89d050840d9B93AA6E5f73A350921dD1818059f7
 
-https://mumbai.polygonscan.com/address/0x5158542F000f3D50aA3Ef90E04beB41C80b8D862
+https://explorer.pops.one/address/0x89d050840d9b93aa6e5f73a350921dd1818059f7
 
 ### How its made:
 
